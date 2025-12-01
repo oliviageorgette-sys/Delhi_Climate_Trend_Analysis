@@ -15,9 +15,10 @@ The final output is a three-page interactive dashboard that explains how tempera
 - Power BI
 
   ## Dataset Overview
-  Dataset Source: Source: Kaggle – Daily Climate Time Series
-  Source URL: https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data
+  Dataset Source: Kaggle – Daily Climate Time Series
 
+  Source URL: https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data
+  
 Contains:
 - Date
 - Mean Temperature (°C)
@@ -49,17 +50,6 @@ The cleaned CSV was imported into MySQL Workbench for deeper analysis.
 - Monthly patterns
 - Data validation and comparisons
 
-### Example Query
-SELECT 
-    SUBSTRING_INDEX(date, '/', -1) AS Year,
-    ROUND(AVG(meantemp), 2) AS Avg_Temperature,
-    ROUND(AVG(humidity), 2) AS Avg_Humidity,
-    ROUND(AVG(wind_speed), 2) AS Avg_WindSpeed,
-    ROUND(AVG(meanpressure), 2) AS Avg_Pressure
-FROM climate_data_raw
-GROUP BY Year
-ORDER BY Year;
-
 SQL confirmed the seasonal patterns we later visualized in Power BI.
 
 ## Power BI Dashboard
@@ -68,6 +58,7 @@ Each page contained four visuals supported by interactive Month and Year slicers
 
 ## PAGE 1 – Trend Analysis 
 ![Page 1](https://github.com/user-attachments/assets/6ead7f23-1105-484a-afcd-177451e8343b)
+
 When we looked at the first page of the dashboard, the climate immediately began to reveal its natural rhythm. Each line chart showed how the weather moves throughout the year.
 
 Temperature gradually builds up like a slow climb, rising month after month until it reaches its peak in the middle of the year. After that, it cools down again, creating a smooth and predictable heat cycle.
@@ -80,6 +71,7 @@ Overall, Page 1 tells a clear story. The climate follows a stable seasonal cycle
 
 ## PAGE 2 – Variations & Extremes
 ![Page 2](https://github.com/user-attachments/assets/41f79d5d-2b75-47c4-9eb7-0c85840072f8)
+
 On this page, the climate story becomes more detailed as we turn our attention to highs, lows, and variability.
 
 The charts showing maximum and minimum temperatures across the years tell us something unexpected — the heat remains remarkably stable. Year after year, the highest temperatures barely change, and even the coldest temperatures fluctuate only slightly. This consistency suggests no extreme weather shifts or unusual heat spikes over the period.
