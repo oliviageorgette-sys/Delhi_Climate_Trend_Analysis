@@ -84,7 +84,7 @@ The wind speed category visual ties the entire page together. By grouping wind d
 
 Page 2 gives us a deeper understanding of the climate’s intensity, stability, and variability — showing when conditions are steady and when the atmosphere becomes more active.
 
-## PAGE 3 – Correlations & Relationships (Storytelling Insights)
+## PAGE 3 – Correlations & Relationships 
 ![Page 3](https://github.com/user-attachments/assets/4e328c1f-0eb5-4e92-b6a1-ea31e49c7d1d)
 
 The final page brings the climate story full circle by exploring how these variables interact with one another.
